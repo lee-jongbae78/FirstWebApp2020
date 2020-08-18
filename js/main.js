@@ -29,5 +29,5 @@ const title = document.querySelector("#title");
 console.log(title);
 title.innerHTML = name +"님 학습을 시작합니다.";
 title.style.color = "red";
-document.title= "title changed!";
+//document.title= "title changed!";
 
