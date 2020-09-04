@@ -2,8 +2,6 @@ const name ="ljb";
 
 const ljbInfo = {name:"leejongbae", age:43, kids : ["first", "second", "third"]}; //array, object 혼합
 
-document.write("테스트");
-
 function sayHello(a){
     return `${a} hi!!!`;
 }
