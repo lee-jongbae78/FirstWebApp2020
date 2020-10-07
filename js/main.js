@@ -20,16 +20,15 @@ title.style.color = "red";
 
 function changeBgB() {
   const target = document.querySelector("body");
-  const target = document.querySelector("body");
+  const targetDay = document.getElementsByClassName("#targetDay");
 
   if (this.value === "day") {
     target.style.backgroundColor = "black";
-
+    document.getElementById("targetDay").value = "day";
     this.value = "night";
-    console.log(target.value);
   } else {
     target.style.backgroundColor = "white";
+    document.getElementById("targetDay").value = "night";
     this.value = "day";
-    console.log(target.value);
   }
 }
