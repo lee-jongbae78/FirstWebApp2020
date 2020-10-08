@@ -21,14 +21,25 @@ title.style.color = "red";
 function changeBgB() {
   const target = document.querySelector("body");
   const targetDay = document.getElementsByClassName("#targetDay");
+  var litest = document.querySelectorAll("li");
 
-  if (this.value === "day") {
-    target.style.backgroundColor = "black";
-    document.getElementById("targetDay").value = "day";
-    this.value = "night";
-  } else {
+  if (targetDay.value === "day") {
     target.style.backgroundColor = "white";
+    document.getElementById("targetDay").value = "day";
+    i = 0;
+    while (i < litest.length) {
+      litest[i].style.color = "powderblue";
+      i = i + 1;
+    }
+    targetDay.value = "night";
+  } else {
+    i = 0;
+    target.style.backgroundColor = "black";
     document.getElementById("targetDay").value = "night";
-    this.value = "day";
+    while (i < litest.length) {
+      litest[i].style.color = "white";
+      i = i + 1;
+    }
+    targetDay.value = "day";
   }
 }
