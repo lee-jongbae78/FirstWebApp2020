@@ -43,3 +43,18 @@ function changeBgB() {
     targetDay.value = "day";
   }
 }
+
+function hellotest(){
+  var hw = document.getElementById("hellotest");
+  hw.addEventListener("click", function(){
+    alert("hello~~~~~");
+  })
+}
+
+function logIn(){
+  if(prompt("id???") === "leejongbae78"){
+    alert("welcome ljb");
+  }else {
+    alert("fail");
+  }
+  }
