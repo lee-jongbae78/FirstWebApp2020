@@ -16,19 +16,19 @@
 }
 
 html {
-  font-family: -apple-system, BlinkMacSystemFont, 
-  /* 한글 폰트 들어갈 자리 */ 
-  "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, 
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont,
+    /* 한글 폰트 들어갈 자리 */ "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
 
   /* `font` 속성 리셋 */
   font-size: 16px; /* 기본 글골 사이즈 정의 : 16x => 1rem */
-  font-weight: normal; 
+  font-weight: normal;
   line-height: 1.5; /* 단위 쓰지 말것 */
   background-color: #fff;
   color: #4d5058;
   /* 글꼴 크기 조정을 방지 */
-  -webkit-text-size-adjust: 100%; 
+  -webkit-text-size-adjust: 100%;
   /* 폰트를 부드럽게 */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -41,29 +41,40 @@ body {
 }
 
 /* 기본 셋업 */
-header, section, article, aside, footer, main,
-a, button, input, textarea,
-img, nav,
-ul, ol, li, 
+header,
+section,
+article,
+aside,
+footer,
+main,
+a,
+button,
+input,
+textarea,
+img,
+nav,
+ul,
+ol,
+li,
 p,
-h1, h2, h3, h4, h5, h6,
-div, span {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+span {
   margin: 0;
   padding: 0;
   /* 폰트 크기 상속 */
   font-size: inherit;
 }
 
-
-  /*내가 추가 한것*/
-#title{
+/*내가 추가 한것*/
+#title {
   text-align: center;
 }
-
-
-
-
-
 
 a:active,
 a:hover {
@@ -83,10 +94,11 @@ a:hover {
 abbr[title] {
   text-decoration: underline dotted;
   /* Safari에서는 '밑줄 점선'이 지원되지 않음. */
-  -webkit-text-decoration-style: dotted; 
+  -webkit-text-decoration-style: dotted;
 }
 
-b, strong {
+b,
+strong {
   font-weight: bolder;
 }
 
@@ -111,7 +123,8 @@ ins {
   text-decoration: none;
 }
 
-mark, .mark {
+mark,
+.mark {
   background: #ffd;
   color: #666;
 }
@@ -120,7 +133,8 @@ q {
   font-style: italic;
 }
 
-small, .small {
+small,
+.small {
   font-size: 80%;
 }
 
@@ -208,8 +222,18 @@ figure {
   margin-top: 20px;
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5,.h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   margin: 0 0 20px 0;
   font-weight: normal;
   color: #333;
@@ -217,51 +241,70 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* 인접한 요소 인 경우 여백 추가 */
-* + h1, * + h2, * + h3, * + h4, * + h5, * + h6,
-* + .h1, * + .h2, * + .h3, * + .h4, * + .h5, * + .h6 {
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6,
+* + .h1,
+* + .h2,
+* + .h3,
+* + .h4,
+* + .h5,
+* + .h6 {
   margin-top: 40px;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 2.23125rem;
   line-height: 1.2;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 1.7rem;
   line-height: 1.3;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 1.5rem;
   line-height: 1.4;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 1.25rem;
   line-height: 1.4;
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: 16px;
   line-height: 1.4;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: 0.875rem;
   line-height: 1.4;
 }
 
 @media (min-width: 960px) {
-  h1, .h1 {
+  h1,
+  .h1 {
     font-size: 2.625rem;
   }
-  h2, .h2 {
+  h2,
+  .h2 {
     font-size: 2rem;
   }
 }
 
-ul, ol {
+ul,
+ol {
   padding-right: 0px;
 }
 
@@ -269,7 +312,7 @@ ul > li > ul,
 ul > li > ol,
 ol > li > ol,
 ol > li > ul {
-  margin: 0 0 0 15px
+  margin: 0 0 0 15px;
 }
 
 dt {
@@ -280,7 +323,7 @@ dd {
   margin-right: 0;
 }
 
-hr{
+hr {
   overflow: visible;
   text-align: inherit;
   margin: 0 0 20px 0;
@@ -394,7 +437,7 @@ legend {
   width: 100%;
   max-width: 100%;
   padding: 0;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-size: 1.5rem;
   line-height: inherit;
   color: inherit;
@@ -443,8 +486,9 @@ template {
 }
 
 /* 브라우저는 렌더링 속도, 정밀도에 대한 가독성을 강조 */
-@media screen and (min-width: 960px) { 
-  html, body {
-      text-rendering: optimizeLegibility;
+@media screen and (min-width: 960px) {
+  html,
+  body {
+    text-rendering: optimizeLegibility;
   }
 }

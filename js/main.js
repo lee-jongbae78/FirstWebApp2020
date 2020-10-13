@@ -17,29 +17,28 @@ console.log(title);
 title.innerHTML = name + "님 학습을 시작합니다.";
 title.style.color = "red";
 //document.title= "title changed!";
-
-function changeBgB() {
-  const target = document.querySelector("body");
-  const targetDay = document.getElementsByClassName("#targetDay");
+function setColor(color) {
   var litest = document.querySelectorAll("li");
+  i = 0;
+  while (i < litest.length) {
+    litest[i].style.color = "color";
+    i = i + 1;
+  }
+}
 
-  if (targetDay.value === "day") {
-    target.style.backgroundColor = "white";
-    document.getElementById("targetDay").value = "day";
-    i = 0;
-    while (i < litest.length) {
-      litest[i].style.color = "powderblue";
-      i = i + 1;
-    }
-    targetDay.value = "night";
-  } else {
-    i = 0;
+function nightDayHandler(self) {
+  var target = document.querySelector("body");
+
+  if (self.value === "night") {
     target.style.backgroundColor = "black";
-    document.getElementById("targetDay").value = "night";
-    while (i < litest.length) {
-      litest[i].style.color = "white";
-      i = i + 1;
-    }
-    targetDay.value = "day";
+    target.style.color = "white";
+    setColor("red");
+    self.value = "day";
+  } else {
+    target.style.backgroundColor = "white";
+    target.style.color = "black";
+
+    setColor("blue");
+    self.value = "night";
   }
 }
