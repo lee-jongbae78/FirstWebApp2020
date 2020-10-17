@@ -52,12 +52,19 @@ function hellotest(){
 
 function logIn(){
   if(prompt("id???") === "leejongbae78"){
-    alert("welcome ljb");
+
+    for(var i = 0; i<10; i++){
+      if(i ===5){
+        break;
+      }
+      alert("lslsl" + i);
+    }
   }else {
     alert("fail");
   }
   }
 
+<<<<<<< Updated upstream
   function countSet(){
     for (var i = 0; i < 10; i++){
       for( var j = 0; j <10; j++){
@@ -74,3 +81,5 @@ function logIn(){
 
   console.log(alphabets[2], alphabets[0].toUpperCase(), alphabets.push("z"));
   console.log(alphabets);
+=======
+>>>>>>> Stashed changes
