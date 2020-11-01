@@ -63,23 +63,3 @@ function logIn(){
     alert("fail");
   }
   }
-
-<<<<<<< Updated upstream
-  function countSet(){
-    for (var i = 0; i < 10; i++){
-      for( var j = 0; j <10; j++){
-        document.write("count" + i + j +"<br/>");
-      }
-    }
-  }
-
-  function alphabetSet(){
-    return ["a", "b", "c", "d"];
-  }
-
-  const alphabets = alphabetSet();
-
-  console.log(alphabets[2], alphabets[0].toUpperCase(), alphabets.push("z"));
-  console.log(alphabets);
-=======
->>>>>>> Stashed changes
